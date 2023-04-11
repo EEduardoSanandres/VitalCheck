@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+}
+
+.column #descripcion1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.column #descripcion2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.column #logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.column p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.column button {
+  display: block;
+  margin-top: auto;
+  flex: 0 0 auto;
+}
+
+.contactanos {
+  padding: 10px 20px;
+  background-color: #FF6666;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contactanos:hover {
+  background-color: #EC0000; /* Cambiar el color de fondo al pasar el ratón por encima */
+}
+
+.column span {
+  padding: 10px 20px;
+  flex: 0 0 auto;
+  margin-left: 10px;
+}
+
+.inferior {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}

@@ -1,0 +1,37 @@
+header {
+  display: flex; /* Utilizamos flexbox para alinear los elementos */
+  justify-content: space-between; /* Alinear los elementos en los extremos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  padding: 20px; /* Agregar espaciado interno */
+  background-color: #FFFBF0; /* Cambiar el color de fondo */
+}
+
+/* Estilos para el contenedor del logo y el icono */
+.logo-container {
+  display: flex; /* Utilizamos flexbox para alinear los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+/* Estilos para las imágenes del logo y el icono */
+.logo-container img {
+  width: 60px; /* Tamaño de las imágenes */
+  margin-right: 10px; /* Agregar espacio entre las imágenes */
+}
+
+.logo-container #Logo {
+  width: 150px;
+}
+
+/* Estilos para el botón de registro */
+.registro-btn {
+  padding: 10px 20px; /* Agregar espaciado interno */
+  background-color: #FF6666; /* Cambiar el color de fondo */
+  color: #fff; /* Cambiar el color del texto */
+  border: none; /* Quitar el borde */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+.registro-btn:hover {
+  background-color: #EC0000; /* Cambiar el color de fondo al pasar el ratón por encima */
+}
+
