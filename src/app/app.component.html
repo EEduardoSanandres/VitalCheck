@@ -1,9 +1,16 @@
-<app-encabezado></app-encabezado>
-<br><br>
-<app-descripcion></app-descripcion>
-<br><br>
-<app-beneficio></app-beneficio>
-<br><br>
-<app-precios></app-precios>
-<br><br>
-<app-piepagina></app-piepagina>
+<div class="wrapper">
+  <mat-toolbar color="primary" class="bg-color" style="position: fixed; top: 0; width: 100%; z-index: 1;">
+    <span class="mat-toolbar-row">
+      <img ngSrc="assets/icon.png" alt="Icon" class="toolbar-icon" height="50" width="50" >
+      <img ngSrc="assets/logo.png" alt="Logo" class="toolbar-logo" height="50" width="150">
+    </span>
+    <span class="ml-auto">
+      <a mat-button [routerLink]="'/home'">Home</a>
+      <a mat-button [routerLink]="'/benefits'">Benefits</a>
+      <a mat-button [routerLink]="'/price'">Price</a>
+      <a mat-button [routerLink]="'/sign-in'">Sign-In</a>
+    </span>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

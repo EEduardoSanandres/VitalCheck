@@ -1,0 +1,12 @@
+.mat-spacer{
+  flex: 1 1 auto
+}
+
+mat-card-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}

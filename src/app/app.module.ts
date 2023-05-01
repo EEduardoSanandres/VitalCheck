@@ -1,24 +1,53 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterTestingModule } from "@angular/router/testing";
 import { AppComponent } from './app.component';
-import { EncabezadoComponent } from './encabezado/encabezado.component';
-import { DescripcionComponent } from './descripcion/descripcion.component';
-import { BeneficioComponent } from './beneficio/beneficio.component';
-import { PreciosComponent } from './precios/precios.component';
-import { PiepaginaComponent } from './piepagina/piepagina.component';
+import { HomeComponent } from './public/home/home.component';
+import { BenefitsComponent } from './public/benefits/benefits.component';
+import { PriceComponent } from './public/price/price.component';
+import { SignInComponent } from './security/pages/sign-in/sign-in.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from "@angular/material/card";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {AppRoutingModule} from "./app-routing.module";
+import { FooterComponent } from './public/footer/footer.component';
+import {NgOptimizedImage} from "@angular/common";
+import {MatIconModule} from "@angular/material/icon";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatListModule} from "@angular/material/list";
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    EncabezadoComponent,
-    DescripcionComponent,
-    BeneficioComponent,
-    PreciosComponent,
-    PiepaginaComponent
+    HomeComponent,
+    BenefitsComponent,
+    PriceComponent,
+    SignInComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatToolbarModule,
+    RouterTestingModule,
+    AppRoutingModule,
+    NgOptimizedImage,
+    MatIconModule,
+    MatMenuModule,
+    MatGridListModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

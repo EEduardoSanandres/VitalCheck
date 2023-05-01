@@ -1,0 +1,42 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.column {
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.column h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+mat-nav-list {
+  padding: 0;
+  margin: 0;
+}
+
+mat-nav-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+    width: calc(33.33% - 20px);
+  }
+}
